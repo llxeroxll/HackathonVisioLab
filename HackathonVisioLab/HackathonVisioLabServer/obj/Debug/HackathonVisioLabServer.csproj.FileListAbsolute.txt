@@ -1,0 +1,14 @@
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\HackathonVisioLabServer.dll.config
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\HackathonVisioLabServer.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\HackathonVisioLabServer.pdb
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\EntityFramework.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\EntityFramework.SqlServer.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\System.Data.SQLite.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\System.Data.SQLite.EF6.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\System.Data.SQLite.Linq.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\EntityFramework.xml
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\EntityFramework.SqlServer.xml
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\bin\Debug\System.Data.SQLite.xml
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\obj\Debug\HackathonVisioLabServer.csprojResolveAssemblyReference.cache
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\obj\Debug\HackathonVisioLabServer.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLabServer\obj\Debug\HackathonVisioLabServer.pdb

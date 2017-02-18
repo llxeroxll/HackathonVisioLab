@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonVisioLabClient", "HackathonVisioLab\HackathonVisioLabClient.csproj", "{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonVisioLabServer", "HackathonVisioLabServer\HackathonVisioLabServer.csproj", "{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Debug|x86.ActiveCfg = Debug|x86
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Debug|x86.Build.0 = Debug|x86
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Release|x86.ActiveCfg = Release|x86
+		{5A9564FC-596C-45AF-B2D1-C20EA89DB28F}.Release|x86.Build.0 = Release|x86
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Debug|x86.Build.0 = Debug|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Release|x86.ActiveCfg = Release|x86
+		{77FDA7FA-E42C-4BE6-A44F-19E183E620E4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jjanduy.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HackathonVisioLab\\HackathonVisioLabClient.csproj
+		SccProjectName1 = HackathonVisioLab
+		SccLocalPath1 = HackathonVisioLab
+		SccProjectUniqueName2 = HackathonVisioLabServer\\HackathonVisioLabServer.csproj
+		SccProjectName2 = HackathonVisioLabServer
+		SccLocalPath2 = HackathonVisioLabServer
+	EndGlobalSection
+EndGlobal

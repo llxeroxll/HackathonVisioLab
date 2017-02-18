@@ -1,0 +1,14 @@
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\HackathonVisioLab.exe.config
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\HackathonVisioLab.exe
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\HackathonVisioLab.pdb
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\HackathonVisioLabServer.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\System.Data.SQLite.dll
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\HackathonVisioLabServer.pdb
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\bin\Release\System.Data.SQLite.xml
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLabClient.csprojResolveAssemblyReference.cache
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.Properties.Resources.resources
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.View.ClientLogin.resources
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.View.Main.resources
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLabClient.csproj.GenerateResource.Cache
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.exe
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.pdb
