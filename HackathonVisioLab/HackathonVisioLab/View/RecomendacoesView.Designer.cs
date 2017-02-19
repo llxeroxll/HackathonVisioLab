@@ -34,6 +34,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +51,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(17, 15);
+            this.panel1.Location = new System.Drawing.Point(17, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(542, 271);
+            this.panel1.Size = new System.Drawing.Size(622, 254);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -84,17 +89,18 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(198, 302);
+            this.button1.Location = new System.Drawing.Point(238, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Anterior";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Location = new System.Drawing.Point(302, 302);
+            this.button2.Location = new System.Drawing.Point(342, 302);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -102,20 +108,70 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.FullRowSelect = true;
+            this.listView1.Location = new System.Drawing.Point(11, 364);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(641, 120);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Proximidade";
+            this.columnHeader1.Width = 87;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Nome";
+            this.columnHeader2.Width = 532;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 337);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Pessoas de interesse";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 24);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Recomendações";
+            // 
             // RecomendacoesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "RecomendacoesView";
-            this.Size = new System.Drawing.Size(575, 343);
+            this.Size = new System.Drawing.Size(655, 496);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,5 +183,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -26,7 +26,7 @@ namespace HackathonVisioLabServer.Model.IAAlgorithms
             {
                 foreach (Compra com2 in comprasC2)
                 {
-                    if (com1.id == com2.id)
+                    if (com1.produto.id == com2.produto.id)
                     {
                         score++;
                         break;

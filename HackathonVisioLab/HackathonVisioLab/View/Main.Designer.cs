@@ -30,7 +30,6 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.minhasComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recomendaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -49,18 +48,10 @@
             // 
             // comprasToolStripMenuItem
             // 
-            this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.minhasComprasToolStripMenuItem});
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.comprasToolStripMenuItem.Text = "Compras";
-            // 
-            // minhasComprasToolStripMenuItem
-            // 
-            this.minhasComprasToolStripMenuItem.Name = "minhasComprasToolStripMenuItem";
-            this.minhasComprasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.minhasComprasToolStripMenuItem.Text = "Minhas compras";
-            this.minhasComprasToolStripMenuItem.Click += new System.EventHandler(this.minhasComprasToolStripMenuItem_Click);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.comprasToolStripMenuItem.Text = "Minhas Compras";
+            this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
             // recomendaçõesToolStripMenuItem
             // 
@@ -101,7 +92,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem minhasComprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recomendaçõesToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
     }

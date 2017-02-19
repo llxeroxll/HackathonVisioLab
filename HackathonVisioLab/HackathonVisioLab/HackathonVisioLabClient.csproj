@@ -85,12 +85,6 @@
     <Compile Include="View\ComprasClinteView.Designer.cs">
       <DependentUpon>ComprasClinteView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\GruposView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\GruposView.Designer.cs">
-      <DependentUpon>GruposView.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +111,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ComprasClinteView.resx">
       <DependentUpon>ComprasClinteView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\GruposView.resx">
-      <DependentUpon>GruposView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

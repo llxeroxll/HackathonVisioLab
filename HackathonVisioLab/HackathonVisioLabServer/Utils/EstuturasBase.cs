@@ -13,6 +13,8 @@ namespace HackathonVisioLabServer.Utils
             public int id;
             public string cpf;
             public string nome;
+
+            public int proximidade;
         }
 
         public class Produto

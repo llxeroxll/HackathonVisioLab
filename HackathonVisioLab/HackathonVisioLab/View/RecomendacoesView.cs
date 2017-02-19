@@ -28,6 +28,14 @@ namespace HackathonVisioLab.View
 
             produtos = IAControl.BuscaRecomendacao(cliente);
             exibeRecomendacoes();
+
+            List<Cliente> clientes = IAControl.BuscaGrupo(cliente);
+
+            foreach (var c in clientes)
+            {
+                var item1 = new ListViewItem(new[] { c.proximidade + "", c.nome });
+                listView1.Items.Add(item1);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,6 +50,15 @@ namespace HackathonVisioLab.View
             label2.Text = produtos[cont].tag;
 
             pictureBox1.Image = new Bitmap("imagens\\" + produtos[cont].id + ".jpg");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cont--;
+
+            if (cont == -1)
+                cont = produtos.Count - 1;
+            exibeRecomendacoes();
         }
     }
 }

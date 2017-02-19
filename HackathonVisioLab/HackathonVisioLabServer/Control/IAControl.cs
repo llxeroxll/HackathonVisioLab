@@ -11,9 +11,23 @@ namespace HackathonVisioLabServer.Control
 {
     public class IAControl
     {
-        public static List<int> BuscaGrupo(Cliente cliente)
+        public static List<Cliente> BuscaGrupo(Cliente cliente)
         {
-            return ClassificadorKNN.INSTANCE.buscaGrupo(cliente);
+
+            var id_clientes = ClassificadorKNN.INSTANCE.buscaGrupo(cliente);
+
+            List<Cliente> clientes = new List<Cliente>();
+
+            foreach (var c in id_clientes)
+            {
+                var aux = ClienteSqlite.getCliente(c);
+
+                aux.proximidade = ClassificadorKNN.INSTANCE.calculaSimilaridade(cliente, aux);
+
+                clientes.Add(aux);
+            }
+            
+            return clientes;
         }
 
         public static List<Produto> BuscaRecomendacao(Cliente cliente)
