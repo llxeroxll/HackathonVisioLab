@@ -8,13 +8,11 @@ namespace HackathonVisioLabServer.Utils
 {
     public class EstuturasBase
     {
-        public class Client
+        public class Cliente
         {
             public int id;
             public string cpf;
             public string nome;
-
-
         }
 
         public class Produto
@@ -29,7 +27,7 @@ namespace HackathonVisioLabServer.Utils
         {
             public int id;
             public DateTime horario;
-            public Client cliente;
+            public Cliente cliente;
             public Produto produto;
         }
     }

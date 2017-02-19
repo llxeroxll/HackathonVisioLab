@@ -13,9 +13,25 @@ namespace HackathonVisioLab.View
 {
     public partial class Main : Form
     {
+        Cliente cliente;
+
+        ComprasClinteView comprasView;
+
         public Main(Cliente cliente)
         {
-            InitializeComponent();
+           InitializeComponent();
+
+            this.cliente = cliente;
+        }
+
+        private void minhasComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            comprasView = new ComprasClinteView();
+            comprasView.Size = panel1.Size;
+
+            panel1.Controls.Add(comprasView);
+            comprasView.Dock = DockStyle.Fill;
         }
     }
 }

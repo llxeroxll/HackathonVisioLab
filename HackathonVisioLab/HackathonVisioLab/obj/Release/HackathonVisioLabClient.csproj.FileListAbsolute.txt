@@ -12,3 +12,4 @@ X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\Ha
 X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLabClient.csproj.GenerateResource.Cache
 X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.exe
 X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.pdb
+X:\VisioLab\HackathonVisioLab\HackathonVisioLab\HackathonVisioLab\obj\Release\HackathonVisioLab.View.ComprasClinteView.resources

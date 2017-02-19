@@ -15,6 +15,7 @@ hs_err_pid*
 # Operating System Files
 # =========================
 
+
 # OSX
 # =========================
 
@@ -61,3 +62,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#VS Version
+$tf

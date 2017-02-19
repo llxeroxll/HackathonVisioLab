@@ -10,9 +10,9 @@ namespace HackathonVisioLabServer.Control
 {
     public class ClienteControl
     {
-        public static Client BuscaCliente(string cpf, string senha)
+        public static Cliente BuscaCliente(string cpf, string senha)
         {
-            return ClientSqlite.getClient(cpf, senha);
+            return ClienteSqlite.getCliente(cpf, senha);
         }
     }
 }

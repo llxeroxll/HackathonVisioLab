@@ -9,7 +9,7 @@ namespace HackathonVisioLabServer.Model.Sqlite
 {
     class ProdutoSqlite
     {
-        
+        #region executeQuery/NonQuery
         private static int executeNonQuery(string query)
         {
             DatabaseSqlite db = DatabaseSqlite.Instance;
@@ -21,7 +21,7 @@ namespace HackathonVisioLabServer.Model.Sqlite
             db.closeConnection();
             return ret;
         }
-
+        
         private static DataTable executeQuery(string query)
         {
             DatabaseSqlite db = DatabaseSqlite.Instance;
@@ -31,7 +31,9 @@ namespace HackathonVisioLabServer.Model.Sqlite
             db.closeConnection();
             return ret;
         }
+        #endregion
 
+        //Busca produto no banco através da PK: id
         public static Produto getProduto(int id)
         {
             string query = string.Format("SELECT * FROM Produto WHERE ID = {0};", id);
@@ -53,7 +55,8 @@ namespace HackathonVisioLabServer.Model.Sqlite
             return produto;
         }
 
-        public static String getTag(int id)
+        
+        private static String getTag(int id)
         {
             string query = string.Format("SELECT * FROM Tag WHERE ID = {0};", id);
             var dt = executeQuery(query);

@@ -33,6 +33,7 @@
             this.minhasComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recomendaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             this.minhasComprasToolStripMenuItem.Name = "minhasComprasToolStripMenuItem";
             this.minhasComprasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.minhasComprasToolStripMenuItem.Text = "Minhas compras";
+            this.minhasComprasToolStripMenuItem.Click += new System.EventHandler(this.minhasComprasToolStripMenuItem_Click);
             // 
             // realizarComprasToolStripMenuItem
             // 
@@ -74,11 +76,22 @@
             this.recomendaçõesToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.recomendaçõesToolStripMenuItem.Text = "Recomendações";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(512, 346);
+            this.panel1.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 370);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
@@ -98,5 +111,6 @@
         private System.Windows.Forms.ToolStripMenuItem minhasComprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarComprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recomendaçõesToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }

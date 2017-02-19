@@ -9,8 +9,10 @@ using static HackathonVisioLabServer.Utils.EstuturasBase;
 
 namespace HackathonVisioLabServer.Model.Sqlite
 {
-    class ClientSqlite
+    class ClienteSqlite
     {
+        #region executeQuery/NonQuery
+
         private static int executeNonQuery(string query)
         {
             DatabaseSqlite db = DatabaseSqlite.Instance;
@@ -32,8 +34,9 @@ namespace HackathonVisioLabServer.Model.Sqlite
             db.closeConnection();
             return ret;
         }
-        
-        public static Client getClient(string cpf, string senha)
+        #endregion
+
+        public static Cliente getCliente(string cpf, string senha)
         {
             string query = string.Format("SELECT * FROM Cliente WHERE CPF LIKE \'{0}\' AND Senha LIKE \'{1}\';", cpf, senha);
             var dt = executeQuery(query);
@@ -43,7 +46,7 @@ namespace HackathonVisioLabServer.Model.Sqlite
 
             DataRow row = dt.Rows[0];            
 
-            Client cliente = new Client();
+            Cliente cliente = new Cliente();
 
             cliente.id = int.Parse(row[0].ToString());
             cliente.cpf = row[1].ToString();
@@ -52,14 +55,14 @@ namespace HackathonVisioLabServer.Model.Sqlite
             return cliente;
         }
 
-        public static Client getCliente(int id)
+        public static Cliente getCliente(int id)
         {
             string query = string.Format("SELECT * FROM Cliente WHERE ID = {0};", id);
             var dt = executeQuery(query);
             
             DataRow row = dt.Rows[0];
 
-            Client client = new Client();
+            Cliente client = new Cliente();
 
             client.id = int.Parse(row[0].ToString());
             client.cpf = row[1].ToString();
