@@ -88,6 +88,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Control\ClienteControl.cs" />
     <Compile Include="Control\CompraControl.cs" />
+    <Compile Include="Control\IAControl.cs" />
     <Compile Include="Model\IAAlgorithms\ClassificadorKNN.cs" />
     <Compile Include="Model\IAAlgorithms\IAInterface.cs" />
     <Compile Include="Model\Sqlite\ClientSqlite.cs" />

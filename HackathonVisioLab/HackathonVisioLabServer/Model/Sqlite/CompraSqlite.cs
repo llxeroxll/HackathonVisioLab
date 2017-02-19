@@ -37,7 +37,7 @@ namespace HackathonVisioLabServer.Model.Sqlite
         //Busca todas as compras do clinte pelo objeto cliente
         public static List<Compra> getByClient(Cliente client)
         {
-            string query = string.Format("SELECT * FROM Compra WHERE ID_cliente = {0};", client.id);
+            string query = string.Format("SELECT * FROM Compra WHERE ID_cliente = {0} ORDER BY Horario ASC;", client.id);
             var dt = executeQuery(query);
 
             List<Compra> compras = new List<Compra>();
@@ -50,6 +50,8 @@ namespace HackathonVisioLabServer.Model.Sqlite
                 compra.cliente = ClienteSqlite.getCliente(int.Parse(row[1].ToString()));
                 compra.produto = ProdutoSqlite.getProduto(int.Parse(row[2].ToString()));
                 DateTime.TryParse(row[3].ToString(), out compra.horario);
+
+                compras.Add(compra);
             }
 
             return compras;
@@ -71,6 +73,8 @@ namespace HackathonVisioLabServer.Model.Sqlite
                 compra.cliente = ClienteSqlite.getCliente(int.Parse(row[1].ToString()));
                 compra.produto = ProdutoSqlite.getProduto(int.Parse(row[2].ToString()));
                 DateTime.TryParse(row[3].ToString(), out compra.horario);
+
+                compras.Add(compra);
             }
 
             return compras;
@@ -86,7 +90,7 @@ namespace HackathonVisioLabServer.Model.Sqlite
 
             foreach (DataRow row in dt.Rows)
             {
-                clientes.Add(int.Parse(row[1].ToString());
+                clientes.Add(int.Parse(row[1].ToString()));
             }
 
             return clientes;

@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minhasComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.realizarComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recomendaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -51,8 +50,7 @@
             // comprasToolStripMenuItem
             // 
             this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.minhasComprasToolStripMenuItem,
-            this.realizarComprasToolStripMenuItem});
+            this.minhasComprasToolStripMenuItem});
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
             this.comprasToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.comprasToolStripMenuItem.Text = "Compras";
@@ -60,21 +58,16 @@
             // minhasComprasToolStripMenuItem
             // 
             this.minhasComprasToolStripMenuItem.Name = "minhasComprasToolStripMenuItem";
-            this.minhasComprasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.minhasComprasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.minhasComprasToolStripMenuItem.Text = "Minhas compras";
             this.minhasComprasToolStripMenuItem.Click += new System.EventHandler(this.minhasComprasToolStripMenuItem_Click);
-            // 
-            // realizarComprasToolStripMenuItem
-            // 
-            this.realizarComprasToolStripMenuItem.Name = "realizarComprasToolStripMenuItem";
-            this.realizarComprasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.realizarComprasToolStripMenuItem.Text = "Realizar compras";
             // 
             // recomendaçõesToolStripMenuItem
             // 
             this.recomendaçõesToolStripMenuItem.Name = "recomendaçõesToolStripMenuItem";
             this.recomendaçõesToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.recomendaçõesToolStripMenuItem.Text = "Recomendações";
+            this.recomendaçõesToolStripMenuItem.Click += new System.EventHandler(this.recomendaçõesToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -109,7 +102,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem minhasComprasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem realizarComprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recomendaçõesToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
     }

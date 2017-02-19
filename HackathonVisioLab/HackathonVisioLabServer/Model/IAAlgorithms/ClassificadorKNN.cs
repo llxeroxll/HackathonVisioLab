@@ -12,6 +12,10 @@ namespace HackathonVisioLabServer.Model.IAAlgorithms
     //Strategy para a interface IAInterface
     class ClassificadorKNN : IAInterface
     {
+        public static ClassificadorKNN INSTANCE = new ClassificadorKNN();
+
+        private ClassificadorKNN() { }
+
         public int calculaSimilaridade(Cliente c1, Cliente c2)
         { // Cakcula Escore de proximidade
             List<Compra> comprasC1 = CompraSqlite.getByClient(c1);
@@ -56,9 +60,12 @@ namespace HackathonVisioLabServer.Model.IAAlgorithms
             dic.Remove(cliente.id);//Remover o proprio cliente da lista de mais proximos dele
 
             //Ordenar Clientes por escore comprasCliente
-            Dictionary<int, int> sortedDict = (Dictionary<int, int>)from entry in dic orderby entry.Value ascending select entry;
-            List<int> users = sortedDict.Select(kvp => kvp.Value).ToList();
+            //Dictionary<int, int> sortedDict = (Dictionary<int, int>)from entry in dic orderby entry.Value ascending select entry;
+            var sortedDict = from pair in dic orderby pair.Value descending select pair;
 
+            List<int> users = sortedDict.Select(kvp => kvp.Key).ToList();
+
+            //retorna usuários mais próximos ordenados
             return users;
 
         }
@@ -85,11 +92,15 @@ namespace HackathonVisioLabServer.Model.IAAlgorithms
                 }
             }
 
-            Dictionary<int, int> sortedDict = (Dictionary<int, int>)from entry in dic orderby entry.Value ascending select entry;
+            //Dictionary<int, int> sortedDict = (Dictionary<int, int>)from entry in dic orderby entry.Value ascending select entry;
 
-            List<int> recomendationsSorted = sortedDict.Select(kvp => kvp.Value).ToList();
+            //List<int> recomendationsSorted = sortedDict.Select(kvp => kvp.Value).ToList();
 
-            for(int i = 0; i < recomendationsSorted.Count; i++) { //Verifica se o usuário já tem o produto que seria recomendado
+            var sortedDict = from pair in dic orderby pair.Value descending select pair;
+
+            List<int> recomendationsSorted = sortedDict.Select(kvp => kvp.Key).ToList();
+
+            for (int i = 0; i < recomendationsSorted.Count; i++) { //Verifica se o usuário já tem o produto que seria recomendado
                 int neighborProd= recomendationsSorted.ElementAt(i);
                 foreach (Compra c in comprasCliente) {
                     if (c.produto.id == neighborProd)

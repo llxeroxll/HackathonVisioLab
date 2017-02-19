@@ -45,22 +45,24 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(461, 244);
+            this.listView1.Size = new System.Drawing.Size(614, 244);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Data";
-            this.columnHeader1.Width = 74;
+            this.columnHeader1.Width = 104;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Produto";
-            this.columnHeader2.Width = 150;
+            this.columnHeader2.Width = 355;
             // 
             // columnHeader3
             // 
@@ -79,7 +81,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.listView1);
             this.Name = "ComprasClinteView";
-            this.Size = new System.Drawing.Size(467, 250);
+            this.Size = new System.Drawing.Size(620, 250);
             this.ResumeLayout(false);
 
         }

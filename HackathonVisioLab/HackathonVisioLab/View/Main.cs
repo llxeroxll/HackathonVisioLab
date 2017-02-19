@@ -16,10 +16,13 @@ namespace HackathonVisioLab.View
         Cliente cliente;
 
         ComprasClinteView comprasView;
+        RecomendacoesView recomendacoes;
 
         public Main(Cliente cliente)
         {
            InitializeComponent();
+
+            this.Text = cliente.nome;
 
             this.cliente = cliente;
         }
@@ -27,11 +30,21 @@ namespace HackathonVisioLab.View
         private void minhasComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            comprasView = new ComprasClinteView();
+            comprasView = new ComprasClinteView(cliente);
             comprasView.Size = panel1.Size;
 
             panel1.Controls.Add(comprasView);
             comprasView.Dock = DockStyle.Fill;
+        }
+
+        private void recomendaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            recomendacoes = new RecomendacoesView(cliente);
+            recomendacoes.Size = panel1.Size;
+
+            panel1.Controls.Add(recomendacoes);
+            recomendacoes.Dock = DockStyle.Fill;
         }
     }
 }
